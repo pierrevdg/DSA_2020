@@ -98,17 +98,97 @@ namespace Lesson_03
         static void Homework_01()
         {
             int[] array = new int[10];
-            for(int i=0; i<array.Length;i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 array[i] = i;
             }
         }
+        static void Homework_02()
+        {
+            Stack<int> list = new Stack<int>();
+            list.Push(9);
+            list.Push(17);
+            list.Push(78);
+            list.Push(98);
+            list.Push(1);
+            list.Push(30);
+            list.Push(432);
+            list.Push(212);
+            list.Push(834);
+            list.Push(56);
+            if (list.Contains(9))
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        static void Homework_03()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(9);
+            queue.Enqueue(17);
+            queue.Enqueue(78);
+            queue.Enqueue(98);
+            queue.Enqueue(1);
+            queue.Enqueue(30);
+            queue.Enqueue(432);
+            queue.Enqueue(212);
+            queue.Enqueue(834);
+            queue.Enqueue(56);
+            if (queue.Contains(9))
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+            foreach (var item in queue)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        static void Homework_04()
+        {
+            List<int> list = new List<int>();
+            list.Add(9);
+            list.Add(17);
+            list.Add(78);
+            list.Add(98);
+            list.Add(1);
+            list.Add(30);
+            list.Add(432);
+            list.Add(212);
+            list.Add(834);
+            list.Add(56);
+            if (list.Contains(9))
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
         static void Main(string[] args)
         {
-            string sentence = "Display the pattern like pyramid using the alphabet.";
+            /*string sentence = "Display the pattern like pyramid using the alphabet.";
             Console.WriteLine(sentence);
             Console.WriteLine();
             Task_03(sentence);
+            */
+            Homework_04();
         }
     }
 }
